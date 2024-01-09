@@ -56,10 +56,14 @@ const config = {
   themes: [
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
-      {
+      /** @type {any} */
+      (
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
         indexBlog: false,
         docsRouteBasePath: '/',
-      },
+      })
+      ),
     ],
   ],
 
