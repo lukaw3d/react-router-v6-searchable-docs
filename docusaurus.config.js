@@ -91,6 +91,7 @@ const config = {
     async parseFrontMatter(params) {
       const defaultParsed = await params.defaultParseFrontMatter(params)
       defaultParsed.frontMatter.sidebar_position = defaultParsed.frontMatter.order
+      if (!defaultParsed.content) defaultParsed.frontMatter.slug = 'index'
       return defaultParsed
     }
   }
