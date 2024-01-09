@@ -62,6 +62,9 @@ const config = {
       ({
         indexBlog: false,
         docsRouteBasePath: '/',
+        removeDefaultStopWordFilter: true,
+        removeDefaultStemmer: true,
+        highlightSearchTermsOnTargetPage: true,
       })
       ),
     ],
