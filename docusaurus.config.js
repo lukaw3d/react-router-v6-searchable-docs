@@ -82,6 +82,14 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+
+  markdown: {
+    async parseFrontMatter(params) {
+      const defaultParsed = await params.defaultParseFrontMatter(params)
+      defaultParsed.frontMatter.sidebar_position = defaultParsed.frontMatter.order
+      return defaultParsed
+    }
+  }
 };
 
 export default config;
