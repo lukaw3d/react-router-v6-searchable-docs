@@ -80,7 +80,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'React Router v6',
+          },
+          {
+            href: 'https://github.com/lukaw3d/react-router-v6-searchable-docs',
+            label: 'GitHub source',
           },
         ],
       },
